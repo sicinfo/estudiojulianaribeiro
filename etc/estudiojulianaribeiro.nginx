@@ -6,7 +6,7 @@ server {
   ssl_certificate_key /etc/letsencrypt/live/estudiojulianaribeiro.sicinfo.net.br/privkey.pem;
 
   server_name estudiojulianaribeiro.sicinfo.net.br;
-  root /home/user/gihub/estudiojulianaribeiro/public;
+  root /home/user/github/estudiojulianaribeiro/public;
 
   location / {
     try_files $uri =404;
