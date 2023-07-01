@@ -1,0 +1,15 @@
+server {
+  listen 443 ssl http2;
+  listen [::]:443 ssl http2;
+
+  ssl_certificate     /etc/letsencrypt/live/estudiojulianaribeiro.sicinfo.net.br/fullchain.pem;
+  ssl_certificate_key /etc/letsencrypt/live/estudiojulianaribeiro.sicinfo.net.br/privkey.pem;
+
+  server_name estudiojulianaribeiro.sicinfo.net.br;
+  root /home/user/gihub/estudiojulianaribeiro/public;
+
+  location / {
+    try_files $uri =404;
+  }
+
+}
